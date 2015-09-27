@@ -1,4 +1,4 @@
-# Shopify API Wrapper
+# Shopify API Wrapper (Laravel 5)
 By [ShopifyExtras.com](http://www.shopifyextras.com) - 24/7 Shopify Support - Bugs Resolved Same Day
 
 ### Installing via Composer
