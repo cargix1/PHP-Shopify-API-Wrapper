@@ -1,4 +1,6 @@
-<?php namespace Shopify\Laravel;
+<?php
+
+namespace Shopify\Laravel;
 
 use Shopify\Exception\UnauthorizedException;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
