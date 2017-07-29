@@ -65,6 +65,7 @@ return array(
         "refund",
         "shop",
         "script-tag",
+        "shipping-zones",
         "smart-collection",
         "theme",
         "transaction",
