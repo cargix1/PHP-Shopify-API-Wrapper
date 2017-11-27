@@ -63,6 +63,31 @@ return array(
                 )
             )
         ),
+	    
+	/**
+         *    getAsset() method
+         *
+         *    reference: http://docs.shopify.com/api/asset
+         */
+        "getAsset" => array(
+            "httpMethod" => "GET",
+            "uri" => "/admin/themes/{id}/assets.json",
+            "summary" => "Get an asset.",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the theme.",
+                    "required" => true
+                ),
+                "asset[key]" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => ""
+                )
+            )
+        ),
         
         
         /**
