@@ -3,7 +3,8 @@
 use Shopify\Exception\UnauthorizedException;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
-class ServiceProvider extends LaravelServiceProvider {
+class ServiceProvider extends LaravelServiceProvider
+{
 
     /**
      * Indicates if loading of the provider is deferred.
@@ -19,16 +20,14 @@ class ServiceProvider extends LaravelServiceProvider {
      */
     public function register()
     {
-        $this->app->bindShared('shopify', function($app) {
-
+        $this->app->singleton('shopify', function ($app) {
             if (isset($app['config']['services']['shopify'])) {
-
                 $config = array_filter($app['config']['services']['shopify']);
 
                 return new \Shopify\Client($config);
-
-            } else return new \Shopify\Client();
-
+            } else {
+                return new \Shopify\Client();
+            }
         });
 
         $app = $this->app;
@@ -43,5 +42,4 @@ class ServiceProvider extends LaravelServiceProvider {
     {
         return array('shopify');
     }
-
 }
