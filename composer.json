@@ -15,7 +15,7 @@
     },
     "require": {
         "php": ">=5.4",
-        "guzzlehttp/guzzle": "~5.0.3",
+        "guzzlehttp/guzzle": "6.3.3",
         "guzzlehttp/guzzle-services": "~0.4"
     },
     "autoload": {
