@@ -1,7 +1,7 @@
 <?php
 return array(
 
-	/*
+    /*
     |--------------------------------------------------------------------------
     | Service Name
     |--------------------------------------------------------------------------
@@ -48,6 +48,7 @@ return array(
         "customer-address",
         "customer-group",
         "customer-saved-search",
+        "draft-order",
         "event",
         "fulfillment",
         "fulfillment-service",
@@ -65,6 +66,7 @@ return array(
         "refund",
         "shop",
         "script-tag",
+        "shipping-zones",
         "smart-collection",
         "theme",
         "transaction",
