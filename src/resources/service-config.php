@@ -35,6 +35,7 @@ return array(
     "services" => array(
         "auth",
         "application-charge",
+        "application-credit",
         "article",
         "asset",
         "blog",
