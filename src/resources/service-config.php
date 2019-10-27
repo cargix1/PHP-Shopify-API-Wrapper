@@ -52,6 +52,7 @@ return array(
         "draft-order",
         "event",
         "fulfillment",
+        "fulfillment-event",
         "fulfillment-service",
         "location",
         "metafield",
